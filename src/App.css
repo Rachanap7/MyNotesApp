@@ -36,3 +36,146 @@
     transform: rotate(360deg);
   }
 }
+
+/* img carousel */
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem;
+}
+
+.image-container .image img {
+  height: 40rem;
+  width: 40rem;
+}
+
+.image-container .left-arrow,
+.image-container .right-arrow {
+  align-self: center;
+  font-size: 3rem;
+  border: 2px solid;
+  border-radius: 3rem;
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+}
+
+/* BMI */
+.bmi-container {
+  border: 2px solid black;
+  height: fit-content;
+  width: 10rem;
+  padding: 2rem 2rem;
+  margin: 10rem 40rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem;
+}
+
+.bmi-container .weight,
+.bmi-container .height {
+  display: flex;
+  flex-direction: column;
+}
+.bmi-container span {
+  color: aqua;
+}
+.bmi-container .bmi-output span {
+  color: crimson;
+}
+
+/* Note App */
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+.allNotes-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.note {
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fef68a;
+  border-radius: 10px;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+.note span{
+  text-align: start;
+  word-break: break-word;
+}
+.note .note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.add-note{
+  background-color: #67d7cc;
+}
+
+.add-note textarea{
+  border: none;
+  resize: none;
+  background-color: #67d7cc;
+}
+.add-note :focus{
+ outline: none;
+}
+
+.save{
+  background-color: #e1e1e1;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 10px 5px 10px;
+}
+.save:hover {
+	background-color: #ededed;
+	cursor: pointer;
+}
+.search-note {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+.search-note input {
+	border: none;
+	background-color: rgb(233, 233, 233);
+	width: 100%;
+}
+.search-note input:focus {
+	outline: none;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark-mode{
+  background-color: black;
+}
+.dark-mode h1 {
+	color: white;
+}
+.delete{
+  cursor: pointer;
+}
