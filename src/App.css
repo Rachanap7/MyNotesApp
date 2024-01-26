@@ -114,7 +114,7 @@
   padding: 1rem;
   white-space: pre-wrap;
 }
-.note span{
+.note span {
   text-align: start;
   word-break: break-word;
 }
@@ -124,29 +124,28 @@
   align-items: center;
 }
 
-
-.add-note{
+.add-note {
   background-color: #67d7cc;
 }
 
-.add-note textarea{
+.add-note textarea {
   border: none;
   resize: none;
   background-color: #67d7cc;
 }
-.add-note :focus{
- outline: none;
+.add-note :focus {
+  outline: none;
 }
 
-.save{
+.save {
   background-color: #e1e1e1;
-	border: none;
-	border-radius: 15px;
-	padding: 5px 10px 5px 10px;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
 }
 .save:hover {
-	background-color: #ededed;
-	cursor: pointer;
+  background-color: #ededed;
+  cursor: pointer;
 }
 .search-note {
   display: flex;
@@ -157,25 +156,55 @@
   margin-bottom: 1.5em;
 }
 .search-note input {
-	border: none;
-	background-color: rgb(233, 233, 233);
-	width: 100%;
+  border: none;
+  background-color: rgb(233, 233, 233);
+  width: 100%;
 }
 .search-note input:focus {
-	outline: none;
+  outline: none;
 }
 
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.dark-mode{
+.dark-mode {
   background-color: black;
 }
 .dark-mode h1 {
-	color: white;
+  color: white;
 }
-.delete{
+.delete,.close,.open-emoji-picker {
   cursor: pointer;
+}
+
+.close{
+  align-self: end;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+ 
+}
+.modal{
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+  width: 30%;
+  height: auto;
+}
+
+.emojipicker{
+  margin: 2.1rem 2rem;
+  height: 50%;
 }
